@@ -1,0 +1,53 @@
+/* header  start*/
+._header{
+    height: 100px;
+    width: 100%;
+    background: white;
+}
+._header img{
+    height: 100px;
+}
+/* header  end*/
+
+/* content start  */
+._row1{
+    margin-right: 0;
+    margin-right: 0;
+}
+._goback a{
+    float: left;
+}
+._icon img{
+    height: 20px;
+    width: 20px;    
+    color: red;
+}
+
+._download a{
+    float: right;
+}
+
+/* content end  */
+
+/* stats start */
+.stats{
+    background-color: aliceblue;
+}
+/* stats end */
+
+/* categories start */
+.card{
+    -webkit-box-shadow: 0px 0px 19px 7px rgba(0,0,0,0.11); 
+    box-shadow: 0px 0px 19px 7px rgba(0,0,0,0.11);
+    transition: all .5s;
+}
+.card:hover{
+    -webkit-box-shadow: 0px 0px 19px 7px rgba(114, 108, 108, 0.53); 
+    box-shadow: 0px 0px 19px 7px rgba(114, 108, 108, 0.53);
+}
+
+.a{
+    margin-left:4%;
+    margin-right:4%;
+}
+/* categories end */
