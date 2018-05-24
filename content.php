@@ -1,52 +1,73 @@
 <?php
     include 'header.php';
+    include 'inc/db.php';
+
+   
 ?>
 
 <div class="jumbotron stats">
     <center>
+    <?php
+        // $quary = "SELECT `title`,`subtitle` from addcatagary where id = $id ";
+        // $result = mysqli_query($conn,$quary);
+        
+        // $row = mysqli_fetch_array($result)
+        
+            
+    ?>
         <h1>27 Customisable Icons</h1>
-        <p>A premium library of SVG icons for iOS, Android & web projects.</p>
+        <p >A premium library of SVG icons for iOS, Android & web projects.</p>
         <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p> -->
     </center>
 </div>
-<div class="_row1">
-    
-    <!-- <div class="col-md-1"></div> -->
-    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
-        <div class="row">
-            <div class="col-md-4 col-sm-4 col-xs-4 _goback">
-                <a href="#" class="btn btn-info btn-md btn-sm">
-                    <span class="glyphicon glyphicon-chevron-left"></span> Go Back
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-4 _icon">
-                <div class="row">  
-                    <a href="#"><center>
-                        <div class="col-md-4 col-sm-4 col-xs-4">            
-                            <span><img src="img/outline.svg" alt="outline"></span><br><p>Outline</p>
-                        </div></center>
-                    </a>
-                    <a href="#"><center>
-                        <div class="col-md-4 col-sm-4 col-xs-4">                      
-                            <span><img src="img/colored.svg" alt="outline"></span><br><p>Colored</p>
-                        </div></center>
-                        </a>
-                    <a href="#"><center>
-                        <div class="col-md-4 col-sm-4 col-xs-4">                   
-                            <span><img src="img/glyph.svg" alt="outline"></span><br><p>Glyphicon</p>
-                        </div></center>   
-                    </a>
-                </div>  
-            </div>
 
-            <div class="col-md-4 col-sm-4 col-xs-4 _download">
-                <a href="#" class="btn btn-info btn-md btn-sm">
-                    <span class="glyphicon glyphicon-download-alt"></span> Download
-                </a>
-            </div>
+<div class="row">
+    <br>
+    <div class="col-md-1"></div>
+    <div class="col-md-10" id="navbar1">
+        <center>
+        <div class="col-md-1 btn btn-info btn-sm button">
+            <a href="#"><span class="glyphicon glyphicon-chevron-left"></span>Go Back</a>
         </div>
-        <hr>
-    </div>
-    <!-- <div class="col-md-1"></div> -->
+        <!-- navigation start -->
+        <div class="col-md-10" >
+            <ul class="nav1">
+                <li class="active">
+                    <a data-toggle="tab" href="#outline "><span><img src="img/outline.svg" alt="outline"></span> Outline</a>
+                </li>
+                <li>
+                    <a data-toggle="tab" href="#colored"><span><img src="img/colored.svg" alt="colored"></span> Colored</a>
+                </li>
+                <li>
+                    <a data-toggle="tab" href="#glyphicon"><span><img src="img/glyph.svg" alt="glyph"></span> Glyphicon</a>
+                </li>
+            </ul>
 
+        </div>
+        <!-- navigation ends -->
+        <div class="col-md-1 btn btn-info btn-sm button">
+            <a href="#"><span class="glyphicon glyphicon-download-alt"></span> Download</a>
+        </div>
+        </center>   
+    </div>
+    <div class="col-md-1"></div>
 </div>
+
+<div class="tab-content">
+    <div id="outline" class="tab-pane fade in active">
+        <center><h1>Gride Size: 48px</h1></center>
+        <center><img src="img/icons1.png" alt="user-interface" class="img-responsive"></center>
+    </div>
+    <div id="colored" class="tab-pane fade">
+        <center><h1>Gride Size: 48px</h1></center>
+        <center><img src="img/icons2.png" alt="user-interface" class="img-responsive"></center>
+    </div>
+    <div id="glyphicon" class="tab-pane fade">
+        <center><h1>Gride Size: 48px</h1></center>
+        <center><img src="img/icons3.png" alt="user-interface" class="img-responsive"></center>
+    </div>
+</div>
+
+<?php
+    include 'footer.php';
+?>
